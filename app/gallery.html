@@ -13,53 +13,72 @@
 
 <body>
 
-  <header class="header">
+  <div class="wrapper">
 
-    <nav class="menu">
+    <header class="header">
 
-      <div class="container">
-        <div class="menu__top">
+      <nav class="menu">
 
-          <a class="logo" href="#">
-            <img class="logo__img" src="images/logo.png" alt="логотип">
-          </a>
-
-          <ul class="menu__top-list">
-            <li class="menu__top-item">
-              <a class="menu__top-link" href="#">Примеры</a>
-            </li>
-            <li class="menu__top-item">
-              <a class="menu__top-link" href="#">Кейсы</a>
-            </li>
-            <li class="menu__top-item">
-              <a class="menu__top-link" href="#">Видео</a>
-            </li>
-          </ul>
-
-          <ul class="menu__contact-list">
-            <li class="menu__contact-item">
-              <a class="menu__contact-phone" href="tel:8(804)3336830">8 (804) 333 68 30</a>
-            </li>
-            <li class="menu__contact-item">
-              <a class="menu__contect-email" href="mailto:ang.borisova2015@yandex.ru">Задать вопрос</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-
-
-      <div class="menu__bottom">
         <div class="container">
+          <div class="menu__top">
 
-          <button class="menu__btn">
-            <span></span>
-          </button>
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/logo.png" alt="логотип" id="home">
+            </a>
 
-          <ul class="menu__bottom-list">
-            <li class="menu__bottom-item">
-              <a class="menu__bottom-link" href="#">Виды продукции</a>
-              <!-- <ul class="sub-menu__list">
+            <ul class="menu__top-list">
+              <li class="menu__top-item">
+                <a class="menu__top-link" href="#">Примеры</a>
+              </li>
+              <li class="menu__top-item">
+                <a class="menu__top-link" href="#">Кейсы</a>
+              </li>
+              <li class="menu__top-item">
+                <a class="menu__top-link" href="#">Видео</a>
+              </li>
+            </ul>
+
+            <form class="form" action="#">
+              <div class="form__top">
+                <h2 class="form__title">Свяжитесь с нами сейчас:</h2>
+                <button class="form__close">
+                  <svg class="form__img">
+                    <use xlink:href="images/sprite.svg#close"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="form__bottom">
+                <input class="form__field" type="text" placeholder="Ваше имя">
+                <input class="form__field" type="text" placeholder="Контактный телефон">
+                <textarea class="form__field form__area" placeholder="Комментарий"></textarea>
+                <button class="form__btn" type="submit">Отправить</button>
+              </div>
+            </form>
+
+            <ul class="menu__contact-list">
+              <li class="menu__contact-item">
+                <a class="menu__contact-phone" href="tel:8(804)3336830">8 (804) 333 68 30</a>
+              </li>
+              <li class="menu__contact-item">
+                <a class="menu__contect-email" href="#">Задать вопрос</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+
+        <div class="menu__bottom">
+          <div class="container">
+
+            <button class="menu__btn">
+              <span></span>
+            </button>
+
+            <ul class="menu__bottom-list">
+              <li class="menu__bottom-item">
+                <a class="menu__bottom-link" href="#">Виды продукции</a>
+                <!-- <ul class="sub-menu__list">
                 <li class="sub-menu__item">
                   <a class="sub-menu__link" href="#">Продукция 1</a>
                 </li>
@@ -70,170 +89,183 @@
                   <a class="sub-menu__link" href="#">Продукция 3</a>
                 </li>
               </ul> -->
+              </li>
+              <li class="menu__bottom-item menu__bottom-item--hidden">
+                <a class="menu__bottom-link" href="#">Примеры</a>
+              </li>
+              <li class="menu__bottom-item menu__bottom-item--hidden">
+                <a class="menu__bottom-link" href="#">Кейсы</a>
+              </li>
+              <li class="menu__bottom-item menu__bottom-item--hidden">
+                <a class="menu__bottom-link" href="#">Видео</a>
+              </li>
+              <li class="menu__bottom-item">
+                <a class="menu__bottom-link" href="#">Плазменная резка</a>
+              </li>
+              <li class="menu__bottom-item">
+                <a class="menu__bottom-link" href="#">Лазерная резка</a>
+              </li>
+              <li class="menu__bottom-item">
+                <a class="menu__bottom-link" href="#" id="gallery">Примеры работ</a>
+              </li>
+              <li class="menu__bottom-item">
+                <a class="menu__bottom-link" href="#" id="about">О компании</a>
+              </li>
+              <li class="menu__bottom-item">
+                <a class="menu__bottom-link" href="#" id="contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+
+    </header>
+
+    <main class="main">
+
+      <section class="gallery page-section">
+        <div class="container">
+          <h2 class="title title--left">Примеры работ</h2>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <a class="gallery__link" href="images/gallery/1.jpg" style="background-image: url(images/gallery/1.jpg);"
+                width="350" height="205" data-fancybox="images">
+                <p class="gallery__description">Установка в оранжевом цвете</p>
+              </a>
             </li>
-            <li class="menu__bottom-item menu__bottom-item--hidden">
-              <a class="menu__bottom-link" href="#">Примеры</a>
+            <li class="gallery__item">
+              <a class="gallery__link" href="images/gallery/2.jpg" style="background-image: url(images/gallery/2.jpg);"
+                width="350" height="205" data-fancybox="images">
+                <p class="gallery__description">Рама станка сделана из 70ой профильной трубы</p>
+              </a>
             </li>
-            <li class="menu__bottom-item menu__bottom-item--hidden">
-              <a class="menu__bottom-link" href="#">Кейсы</a>
+            <li class="gallery__item">
+              <a class="gallery__link" href="images/gallery/3.jpg" style="background-image: url(images/gallery/3.jpg);"
+                width="350" height="205" data-fancybox="images">
+                <p class="gallery__description">Упаковка станка перед отгрузкой</p>
+              </a>
             </li>
-            <li class="menu__bottom-item menu__bottom-item--hidden">
-              <a class="menu__bottom-link" href="#">Видео</a>
+            <li class="gallery__item">
+              <a class="gallery__link" href="images/gallery/4.jpg" style="background-image: url(images/gallery/4.jpg);"
+                width="350" height="205" data-fancybox="images">
+                <p class="gallery__description">Отправляем ТК в любой регион</p>
+              </a>
             </li>
-            <li class="menu__bottom-item">
-              <a class="menu__bottom-link" href="#">Плазменная резка</a>
+            <li class="gallery__item">
+              <a class="gallery__link" href="images/gallery/5.jpg" style="background-image: url(images/gallery/5.jpg);"
+                width="350" height="205" data-fancybox="images">
+                <p class="gallery__description">Упакованный пульт управления</p>
+              </a>
             </li>
-            <li class="menu__bottom-item">
-              <a class="menu__bottom-link" href="#">Лазерная резка</a>
+            <li class="gallery__item">
+              <a class="gallery__link" href="images/gallery/6.jpg" style="background-image: url(images/gallery/6.jpg);"
+                width="350" height="205" data-fancybox="images">
+                <p class="gallery__description">Плазменная установка Start S-WT со стойкой</p>
+              </a>
             </li>
-            <li class="menu__bottom-item">
-              <a class="menu__bottom-link" href="#">Примеры работ</a>
+            <li class="gallery__item">
+              <a class="gallery__link" href="images/gallery/7.jpg" style="background-image: url(images/gallery/7.jpg);"
+                width="350" height="205" data-fancybox="images">
+                <p class="gallery__description">Программа проверочной вырезки</p>
+              </a>
             </li>
-            <li class="menu__bottom-item">
-              <a class="menu__bottom-link" href="#">О компании</a>
+            <li class="gallery__item">
+              <a class="gallery__link" href="images/gallery/8.jpg" style="background-image: url(images/gallery/8.jpg);"
+                width="350" height="205" data-fancybox="images">
+                <p class="gallery__description">Фигурный рез на станке</p>
+              </a>
             </li>
-            <li class="menu__bottom-item">
-              <a class="menu__bottom-link" href="#">Контакты</a>
+            <li class="gallery__item">
+              <a class="gallery__link" href="images/gallery/9.jpg" style="background-image: url(images/gallery/9.jpg);"
+                width="350" height="205" data-fancybox="images">
+                <p class="gallery__description">Стол можно изготовить самим без особых проблем</p>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="images/gallery/10.jpg"
+                style="background-image: url(images/gallery/10.jpg);" width="350" height="205" data-fancybox="images">
+                <p class="gallery__description">Установка с газовым резаком</p>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="images/gallery/11.jpg"
+                style="background-image: url(images/gallery/11.jpg);" width="350" height="205" data-fancybox="images">
+                <p class="gallery__description">Установка в оранжевом цвете</p>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="images/gallery/12.jpg"
+                style="background-image: url(images/gallery/12.jpg);" width="350" height="205" data-fancybox="images">
+                <p class="gallery__description">Отправляем ТК в любой регион</p>
+              </a>
             </li>
           </ul>
         </div>
-      </div>
+      </section>
 
-    </nav>
+    </main>
 
-  </header>
-
-  <main class="main">
-
-    <section class="gallery page-section">
+    <footer class="footer">
       <div class="container">
-        <h2 class="title title--left">Примеры работ</h2>
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <a class="gallery__link" href="images/gallery/1.jpg" style="background-image: url(images/gallery/1.jpg);" width="350" height="205" data-fancybox="images">
-              <p class="gallery__description">Установка в оранжевом цвете</p>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="images/gallery/2.jpg" style="background-image: url(images/gallery/2.jpg);" width="350" height="205" data-fancybox="images">
-              <p class="gallery__description">Рама станка сделана из 70ой профильной трубы</p>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="images/gallery/3.jpg" style="background-image: url(images/gallery/3.jpg);" width="350" height="205" data-fancybox="images">
-              <p class="gallery__description">Упаковка станка перед отгрузкой</p>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="images/gallery/4.jpg" style="background-image: url(images/gallery/4.jpg);" width="350" height="205" data-fancybox="images">
-              <p class="gallery__description">Отправляем ТК в любой регион</p>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="images/gallery/5.jpg" style="background-image: url(images/gallery/5.jpg);" width="350" height="205" data-fancybox="images">
-              <p class="gallery__description">Упакованный пульт управления</p>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="images/gallery/6.jpg" style="background-image: url(images/gallery/6.jpg);" width="350" height="205" data-fancybox="images">
-              <p class="gallery__description">Плазменная установка Start S-WT со стойкой</p>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="images/gallery/7.jpg" style="background-image: url(images/gallery/7.jpg);" width="350" height="205" data-fancybox="images">
-              <p class="gallery__description">Программа проверочной вырезки</p>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="images/gallery/8.jpg" style="background-image: url(images/gallery/8.jpg);" width="350" height="205" data-fancybox="images">
-              <p class="gallery__description">Фигурный рез на станке</p>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="images/gallery/9.jpg" style="background-image: url(images/gallery/9.jpg);" width="350" height="205" data-fancybox="images">
-              <p class="gallery__description">Стол можно изготовить самим без особых проблем</p>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="images/gallery/10.jpg" style="background-image: url(images/gallery/10.jpg);" width="350" height="205" data-fancybox="images">
-              <p class="gallery__description">Установка с газовым резаком</p>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="images/gallery/11.jpg" style="background-image: url(images/gallery/11.jpg);" width="350" height="205" data-fancybox="images">
-              <p class="gallery__description">Установка в оранжевом цвете</p>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="images/gallery/12.jpg" style="background-image: url(images/gallery/12.jpg);" width="350" height="205" data-fancybox="images">
-              <p class="gallery__description">Отправляем ТК в любой регион</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
 
-  </main>
+        <div class="footer__inner">
 
-  <footer class="footer">
-    <div class="container">
+          <div class="footer__box">
+            <h3 class="footer__title">Виды продукции:</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Продукция 1</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Продукция 2</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Продукция 3</a>
+              </li>
+            </ul>
+          </div>
 
-      <div class="footer__inner">
+          <div class="footer__box">
+            <h3 class="footer__title">Услуги:</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Лазерная резка</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Плазменная резка</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="footer__box">
-          <h3 class="footer__title">Виды продукции:</h3>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="#">Продукция 1</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Продукция 2</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Продукция 3</a>
-            </li>
-          </ul>
-        </div>
+          <div class="footer__box">
+            <a class="footer__copy" href="#">Политика защиты персональных данных</a>
+          </div>
 
-        <div class="footer__box">
-          <h3 class="footer__title">Услуги:</h3>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="#">Лазерная резка</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Плазменная резка</a>
-            </li>
-          </ul>
-        </div>
+          <div class="footer__box">
+            <h3 class="footer__title">Контактные данные:</h3>
+            <ul class="footer__list">
+              <li class="footer__item">Телефон: 8 (804) 333 68 30</li>
+              <li class="footer__item">Email: ang.borisova2015@yandex.ru</li>
+              <li class="footer__item">Адрес: ул.Лазерной резки, д.1</li>
+              <li class="footer__item">Координаты навигатора: 123456 654321</li>
+            </ul>
+            <div class="footer__contact">
+              <a class="footer__phone" href="tel:8(804)3336830"></a>
+              <a class="footer__email" href="#">Задать вопрос</a>
+              <a class="footer__social" href="#">
+                <img class="footer__img" src="images/icons/vk.svg" alt="">
+              </a>
+            </div>
 
-        <div class="footer__box">
-          <a class="footer__copy" href="#">Политика защиты персональных данных</a>
-        </div>
-
-        <div class="footer__box">
-          <h3 class="footer__title">Контактные данные:</h3>
-          <ul class="footer__list">
-            <li class="footer__item">Телефон: 8 (804) 333 68 30</li>
-            <li class="footer__item">Email: ang.borisova2015@yandex.ru</li>
-            <li class="footer__item">Адрес: ул.Лазерной резки, д.1</li>
-            <li class="footer__item">Координаты навигатора: 123456 654321</li>
-          </ul>
-          <div class="footer__contact">
-            <a class="footer__phone" href="tel:8(804)3336830"></a>
-            <a class="footer__email" href="mailto:ang.borisova2015@yandex.ru">Задать вопрос</a>
-            <a class="footer__social" href="#">
-              <img class="footer__img" src="images/icons/vk.svg" alt="">
-            </a>
           </div>
 
         </div>
 
       </div>
-
-    </div>
-  </footer>
-  <script src="js/main.min.js"></script>
+    </footer>
+    <script src="js/main.min.js"></script>
+  </div>
 </body>
 
 </html>
