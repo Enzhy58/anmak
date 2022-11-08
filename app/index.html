@@ -8,7 +8,7 @@
   <title>Анмак - лазерная и плазменная резка металла</title>
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/index.min.css">
 </head>
 
 <body>
@@ -16,362 +16,362 @@
 
     <header class="header">
 
-      <nav class="menu">
+    <nav class="menu">
 
+      <div class="container">
+        <div class="menu__top">
+
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="логотип" id="home">
+          </a>
+
+          <ul class="menu__top-list">
+            <li class="menu__top-item">
+              <a class="menu__top-link" href="#">Примеры</a>
+            </li>
+            <li class="menu__top-item">
+              <a class="menu__top-link" href="#">Кейсы</a>
+            </li>
+            <li class="menu__top-item">
+              <a class="menu__top-link" href="#">Видео</a>
+            </li>
+          </ul>
+
+          <form class="form" action="#">
+            <div class="form__top">
+              <h2 class="form__title">Свяжитесь с нами сейчас:</h2>
+              <button class="form__close">
+                <svg class="form__img">
+                  <use xlink:href="images/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="form__bottom">
+              <input class="form__field" type="text" placeholder="Ваше имя">
+              <input class="form__field" type="text" placeholder="Контактный телефон">
+              <textarea class="form__field form__area" placeholder="Комментарий"></textarea>
+              <button class="form__btn" type="submit">Отправить</button>
+            </div>
+          </form>
+
+          <ul class="menu__contact-list">
+            <li class="menu__contact-item">
+              <a class="menu__contact-phone" href="tel:8(804)3336830">8 (804) 333 68 30</a>
+            </li>
+            <li class="menu__contact-item">
+              <a class="menu__contect-email" href="#">Задать вопрос</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+
+      <div class="menu__bottom">
         <div class="container">
-          <div class="menu__top">
 
-            <a class="logo" href="#">
-              <img class="logo__img" src="images/logo.png" alt="логотип" id="home">
-            </a>
+          <button class="menu__btn">
+            <span></span>
+          </button>
 
-            <ul class="menu__top-list">
-              <li class="menu__top-item">
-                <a class="menu__top-link" href="#">Примеры</a>
+          <ul class="menu__bottom-list">
+            <li class="menu__bottom-item">
+              <a class="menu__bottom-link" href="#">Виды продукции</a>
+              <!-- <ul class="sub-menu__list">
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Продукция 1</a>
               </li>
-              <li class="menu__top-item">
-                <a class="menu__top-link" href="#">Кейсы</a>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Продукция 2</a>
               </li>
-              <li class="menu__top-item">
-                <a class="menu__top-link" href="#">Видео</a>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Продукция 3</a>
               </li>
-            </ul>
-
-            <form class="form" action="#">
-              <div class="form__top">
-                <h2 class="form__title">Свяжитесь с нами сейчас:</h2>
-                <button class="form__close">
-                  <svg class="form__img">
-                    <use xlink:href="images/sprite.svg#close"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="form__bottom">
-                <input class="form__field" type="text" placeholder="Ваше имя">
-                <input class="form__field" type="text" placeholder="Контактный телефон">
-                <textarea class="form__field form__area" placeholder="Комментарий"></textarea>
-                <button class="form__btn" type="submit">Отправить</button>
-              </div>
-            </form>
-
-            <ul class="menu__contact-list">
-              <li class="menu__contact-item">
-                <a class="menu__contact-phone" href="tel:8(804)3336830">8 (804) 333 68 30</a>
-              </li>
-              <li class="menu__contact-item">
-                <a class="menu__contect-email" href="#">Задать вопрос</a>
-              </li>
-            </ul>
-
-          </div>
+            </ul> -->
+            </li>
+            <li class="menu__bottom-item menu__bottom-item--hidden">
+              <a class="menu__bottom-link" href="#">Примеры</a>
+            </li>
+            <li class="menu__bottom-item menu__bottom-item--hidden">
+              <a class="menu__bottom-link" href="#">Кейсы</a>
+            </li>
+            <li class="menu__bottom-item menu__bottom-item--hidden">
+              <a class="menu__bottom-link" href="#">Видео</a>
+            </li>
+            <li class="menu__bottom-item">
+              <a class="menu__bottom-link" href="#">Плазменная резка</a>
+            </li>
+            <li class="menu__bottom-item">
+              <a class="menu__bottom-link" href="#">Лазерная резка</a>
+            </li>
+            <li class="menu__bottom-item">
+              <a class="menu__bottom-link" href="#" id="gallery">Примеры работ</a>
+            </li>
+            <li class="menu__bottom-item">
+              <a class="menu__bottom-link" href="#" id="about">О компании</a>
+            </li>
+            <li class="menu__bottom-item">
+              <a class="menu__bottom-link" href="#" id="contacts">Контакты</a>
+            </li>
+          </ul>
         </div>
+      </div>
 
+    </nav>
 
-        <div class="menu__bottom">
-          <div class="container">
-
-            <button class="menu__btn">
-              <span></span>
-            </button>
-
-            <ul class="menu__bottom-list">
-              <li class="menu__bottom-item">
-                <a class="menu__bottom-link" href="#">Виды продукции</a>
-                <!-- <ul class="sub-menu__list">
-                <li class="sub-menu__item">
-                  <a class="sub-menu__link" href="#">Продукция 1</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a class="sub-menu__link" href="#">Продукция 2</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a class="sub-menu__link" href="#">Продукция 3</a>
-                </li>
-              </ul> -->
-              </li>
-              <li class="menu__bottom-item menu__bottom-item--hidden">
-                <a class="menu__bottom-link" href="#">Примеры</a>
-              </li>
-              <li class="menu__bottom-item menu__bottom-item--hidden">
-                <a class="menu__bottom-link" href="#">Кейсы</a>
-              </li>
-              <li class="menu__bottom-item menu__bottom-item--hidden">
-                <a class="menu__bottom-link" href="#">Видео</a>
-              </li>
-              <li class="menu__bottom-item">
-                <a class="menu__bottom-link" href="#">Плазменная резка</a>
-              </li>
-              <li class="menu__bottom-item">
-                <a class="menu__bottom-link" href="#">Лазерная резка</a>
-              </li>
-              <li class="menu__bottom-item">
-                <a class="menu__bottom-link" href="#" id="gallery">Примеры работ</a>
-              </li>
-              <li class="menu__bottom-item">
-                <a class="menu__bottom-link" href="#" id="about">О компании</a>
-              </li>
-              <li class="menu__bottom-item">
-                <a class="menu__bottom-link" href="#" id="contacts">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </nav>
-
-    </header>
+  </header>
 
     <main class="main">
 
       <section class="production page-section">
-        <div class="container">
-          <h2 class="title">Производим корпуса и детали из листового металла</h2>
-          <div class="production__wrapper">
+    <div class="container">
+      <h2 class="title">Производим корпуса и детали из листового металла</h2>
+      <div class="production__wrapper">
 
-            <ul class="production__slider">
-              <li class="production__slide">
-                <img class="production__img" src="images/slider/1.PNG" alt="">
-              </li>
-              <li class="production__slide">
-                <img class="production__img" src="images/slider/1.PNG" alt="">
-              </li>
-              <li class="production__slide">
-                <img class="production__img" src="images/slider/1.PNG" alt="">
-              </li>
-            </ul>
+        <ul class="production__slider">
+          <li class="production__slide">
+            <img class="production__img" src="images/slider/1.PNG" alt="">
+          </li>
+          <li class="production__slide">
+            <img class="production__img" src="images/slider/1.PNG" alt="">
+          </li>
+          <li class="production__slide">
+            <img class="production__img" src="images/slider/1.PNG" alt="">
+          </li>
+        </ul>
 
-            <div class="production__box">
-              <ul class="production__list">
-                <li class="production__item">
-                  <span>Полный цикл производства "под ключ".</span>
-                  Вам не приходится беспокоиться ни о чем - просто ставите задачу и получаете результат.
-                </li>
-                <li class="production__item">
-                  <span>Если нет КД - мы разрабатываем КД.</span>
-                  Опираясь на другие комплектующие, чужой образец или хоть эскиз на салфетке.
-                </li>
-                <li class="production__item">
-                  <span>Ведем дела честно.</span>
-                  Соблюдаем сроки. Следим за качеством. Если допустили брак, переделываем без нервотрепки.
-                </li>
-                <li class="production__item">
-                  <span>Бесплатные пробные экземпляры при заказе партии.</span>
-                  Вы уверены, что детали в партии подходят.
-                </li>
-              </ul>
-              <a class="production__link" href="#">Быстрый расчет стоимости</a>
-            </div>
-
-          </div>
+        <div class="production__box">
+          <ul class="production__list">
+            <li class="production__item">
+              <span>Полный цикл производства "под ключ".</span>
+              Вам не приходится беспокоиться ни о чем - просто ставите задачу и получаете результат.
+            </li>
+            <li class="production__item">
+              <span>Если нет КД - мы разрабатываем КД.</span>
+              Опираясь на другие комплектующие, чужой образец или хоть эскиз на салфетке.
+            </li>
+            <li class="production__item">
+              <span>Ведем дела честно.</span>
+              Соблюдаем сроки. Следим за качеством. Если допустили брак, переделываем без нервотрепки.
+            </li>
+            <li class="production__item">
+              <span>Бесплатные пробные экземпляры при заказе партии.</span>
+              Вы уверены, что детали в партии подходят.
+            </li>
+          </ul>
+          <a class="production__link" href="#">Быстрый расчет стоимости</a>
         </div>
 
-        <div class="specifications">
-          <div class="container">
-            <ul class="specifications__list">
-              <li class="specifications__item">
-                <span class="specifications__number">+/- <span>0,05</span> мм</span>
-                Точность позиционирования и реза
-              </li>
-              <li class="specifications__item">
-                <span class="specifications__number"><span>10 000</span> мм/мин</span>
-                Максимальная скорость резки
-              </li>
-              <li class="specifications__item">
-                <span class="specifications__number">до <span>350</span> мм</span>
-                Резка черной стали
-              </li>
-              <li class="specifications__item">
-                <span class="specifications__number">до <span>100</span> мм</span>
-                Резка нержавеющей стали и аллюминиевых сплавов
-              </li>
-              <li class="specifications__item">
-                <span class="specifications__number"><span>6000</span> x <span>2000</span></span>
-                Габариты рабочих столов
-              </li>
-            </ul>
-          </div>
-        </div>
+      </div>
+    </div>
 
-        <div class="container">
-          <h3 class="production__title">Завод "ТеплоВентМаш" - производитель станков плазменной резки</h3>
-          <div class="production__inner">
+    <div class="specifications">
+      <div class="container">
+        <ul class="specifications__list">
+          <li class="specifications__item">
+            <span class="specifications__number">+/- <span>0,05</span> мм</span>
+            Точность позиционирования и реза
+          </li>
+          <li class="specifications__item">
+            <span class="specifications__number"><span>10 000</span> мм/мин</span>
+            Максимальная скорость резки
+          </li>
+          <li class="specifications__item">
+            <span class="specifications__number">до <span>350</span> мм</span>
+            Резка черной стали
+          </li>
+          <li class="specifications__item">
+            <span class="specifications__number">до <span>100</span> мм</span>
+            Резка нержавеющей стали и аллюминиевых сплавов
+          </li>
+          <li class="specifications__item">
+            <span class="specifications__number"><span>6000</span> x <span>2000</span></span>
+            Габариты рабочих столов
+          </li>
+        </ul>
+      </div>
+    </div>
 
-            <div class="production__content">
-              <div class="production__text">
-                <p>
-                  История предприятия начинается с 2006 года, тогда основным направлением производства были промышленные
-                  вентиляторы и товары народного потребления.
-                </p>
-                <p>
-                  За десятилетие работы мы, как производители станков плазменной резки, и в СНГ, и в России завоевали
-                  репутацию надежного предприятия, выпускающего качественное муталлорежущее оборудование с ЧПУ, о чем
-                  свидетельствует множество отзывов наших партнеров. Это высокая честь, которой мы, безусловно,
-                  гордимся.
-                </p>
-              </div>
-              <ul class="production__content-list">
-                <li class="production__content-item">
-                  Каждый станок комплектуется исключительно под задачи заказчика
-                </li>
-                <li class="production__content-item">
-                  Сервисный центр решает вопросы по работе станков не более 3-х суток
-                </li>
-              </ul>
-            </div>
+    <div class="container">
+      <h3 class="production__title">Завод "ТеплоВентМаш" - производитель станков плазменной резки</h3>
+      <div class="production__inner">
 
-            <div class="production__video">
-              <iframe width="477" height="270" src="https://www.youtube.com/embed/3or3L8iDOF4"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-
-          </div>
-        </div>
-
-      </section>
-
-      <section class="benefits page-section">
-        <div class="container">
-          <h2 class="title">Наши преимущества</h2>
-          <div class="benefits__text">
+        <div class="production__content">
+          <div class="production__text">
             <p>
-              Компания оказывет услуги в сфере металлообработки с 2007 года. За это время предприятие изготовило широкий
-              ряд различного оборудования и реализовало множество проектов: нестандартные конструкции, узлы и детали
-              любой
-              сложности, а также решетки, заборы, лестницы и иные металлоконструкции или изделия из металла.
-              Сотрудничество с предприятием отличают и другие преимущества:
+              История предприятия начинается с 2006 года, тогда основным направлением производства были промышленные
+              вентиляторы и товары народного потребления.
+            </p>
+            <p>
+              За десятилетие работы мы, как производители станков плазменной резки, и в СНГ, и в России завоевали
+              репутацию надежного предприятия, выпускающего качественное муталлорежущее оборудование с ЧПУ, о чем
+              свидетельствует множество отзывов наших партнеров. Это высокая честь, которой мы, безусловно,
+              гордимся.
             </p>
           </div>
-          <ul class="benefits__list">
-            <li class="benefits__item">
-              <img class="benefits__img" src="images/icons/benefits/1.svg" alt="">
-              <div class="benefits__description">
-                <p>
-                  Принимаем чертежи в любом формате
-                </p>
-              </div>
+          <ul class="production__content-list">
+            <li class="production__content-item">
+              Каждый станок комплектуется исключительно под задачи заказчика
             </li>
-            <li class="benefits__item">
-              <img class="benefits__img" src="images/icons/benefits/2.svg" alt="">
-              <div class="benefits__description">
-                <p>
-                  Бесплатная онлайн-консультация
-                </p>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <img class="benefits__img" src="images/icons/benefits/3.svg" alt="">
-              <div class="benefits__description">
-                <p>
-                  Изготовление деталей под ключ
-                </p>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <img class="benefits__img" src="images/icons/benefits/4.svg" alt="">
-              <div class="benefits__description">
-                <p>
-                  Низкие цены
-                </p>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <img class="benefits__img" src="images/icons/benefits/5.svg" alt="">
-              <div class="benefits__description">
-                <p>
-                  Берем заказы и доставляем продукцию по всей России
-                </p>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <img class="benefits__img" src="images/icons/benefits/6.svg" alt="">
-              <div class="benefits__description">
-                <p>
-                  Плазменные и лазерные станки нового поколения
-                </p>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <img class="benefits__img" src="images/icons/benefits/7.svg" alt="">
-              <div class="benefits__description">
-                <p>
-                  Срок выполнения заказа от 1 часа
-                </p>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <img class="benefits__img" src="images/icons/benefits/8.svg" alt="">
-              <div class="benefits__description">
-                <p>
-                  Большой выбор дополнительных услуг
-                </p>
-              </div>
+            <li class="production__content-item">
+              Сервисный центр решает вопросы по работе станков не более 3-х суток
             </li>
           </ul>
         </div>
-      </section>
+
+        <div class="production__video">
+          <iframe width="477" height="270" src="https://www.youtube.com/embed/3or3L8iDOF4"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+      <section class="benefits page-section">
+    <div class="container">
+      <h2 class="title">Наши преимущества</h2>
+      <div class="benefits__text">
+        <p>
+          Компания оказывет услуги в сфере металлообработки с 2007 года. За это время предприятие изготовило широкий
+          ряд различного оборудования и реализовало множество проектов: нестандартные конструкции, узлы и детали
+          любой
+          сложности, а также решетки, заборы, лестницы и иные металлоконструкции или изделия из металла.
+          Сотрудничество с предприятием отличают и другие преимущества:
+        </p>
+      </div>
+      <ul class="benefits__list">
+        <li class="benefits__item">
+          <img class="benefits__img" src="images/icons/benefits/1.svg" alt="">
+          <div class="benefits__description">
+            <p>
+              Принимаем чертежи в любом формате
+            </p>
+          </div>
+        </li>
+        <li class="benefits__item">
+          <img class="benefits__img" src="images/icons/benefits/2.svg" alt="">
+          <div class="benefits__description">
+            <p>
+              Бесплатная онлайн-консультация
+            </p>
+          </div>
+        </li>
+        <li class="benefits__item">
+          <img class="benefits__img" src="images/icons/benefits/3.svg" alt="">
+          <div class="benefits__description">
+            <p>
+              Изготовление деталей под ключ
+            </p>
+          </div>
+        </li>
+        <li class="benefits__item">
+          <img class="benefits__img" src="images/icons/benefits/4.svg" alt="">
+          <div class="benefits__description">
+            <p>
+              Низкие цены
+            </p>
+          </div>
+        </li>
+        <li class="benefits__item">
+          <img class="benefits__img" src="images/icons/benefits/5.svg" alt="">
+          <div class="benefits__description">
+            <p>
+              Берем заказы и доставляем продукцию по всей России
+            </p>
+          </div>
+        </li>
+        <li class="benefits__item">
+          <img class="benefits__img" src="images/icons/benefits/6.svg" alt="">
+          <div class="benefits__description">
+            <p>
+              Плазменные и лазерные станки нового поколения
+            </p>
+          </div>
+        </li>
+        <li class="benefits__item">
+          <img class="benefits__img" src="images/icons/benefits/7.svg" alt="">
+          <div class="benefits__description">
+            <p>
+              Срок выполнения заказа от 1 часа
+            </p>
+          </div>
+        </li>
+        <li class="benefits__item">
+          <img class="benefits__img" src="images/icons/benefits/8.svg" alt="">
+          <div class="benefits__description">
+            <p>
+              Большой выбор дополнительных услуг
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
     </main>
 
     <footer class="footer">
-      <div class="container">
+    <div class="container">
 
-        <div class="footer__inner">
+      <div class="footer__inner">
 
-          <div class="footer__box">
-            <h3 class="footer__title">Виды продукции:</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="footer__link" href="#">Продукция 1</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Продукция 2</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Продукция 3</a>
-              </li>
-            </ul>
-          </div>
+        <div class="footer__box">
+          <h3 class="footer__title">Виды продукции:</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Продукция 1</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Продукция 2</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Продукция 3</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="footer__box">
-            <h3 class="footer__title">Услуги:</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="footer__link" href="#">Лазерная резка</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Плазменная резка</a>
-              </li>
-            </ul>
-          </div>
+        <div class="footer__box">
+          <h3 class="footer__title">Услуги:</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лазерная резка</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Плазменная резка</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="footer__box">
-            <a class="footer__copy" href="#" id="copy">Политика защиты персональных данных</a>
-          </div>
+        <div class="footer__box">
+          <a class="footer__copy" href="#" id="copy">Политика защиты персональных данных</a>
+        </div>
 
-          <div class="footer__box">
-            <h3 class="footer__title">Контактные данные:</h3>
-            <ul class="footer__list">
-              <li class="footer__item">Телефон: 8 (804) 333 68 30</li>
-              <li class="footer__item">Email: ang.borisova2015@yandex.ru</li>
-              <li class="footer__item">Адрес: ул.Лазерной резки, д.1</li>
-              <li class="footer__item">Координаты навигатора: 123456 654321</li>
-            </ul>
-            <div class="footer__contact">
-              <a class="footer__phone" href="tel:8(804)3336830"></a>
-              <a class="footer__email" href="#">Задать вопрос</a>
-              <a class="footer__social" href="#">
-                <img class="footer__img" src="images/icons/vk.svg" alt="">
-              </a>
-            </div>
-
+        <div class="footer__box">
+          <h3 class="footer__title">Контактные данные:</h3>
+          <ul class="footer__list">
+            <li class="footer__item">Телефон: 8 (804) 333 68 30</li>
+            <li class="footer__item">Email: ang.borisova2015@yandex.ru</li>
+            <li class="footer__item">Адрес: ул.Лазерной резки, д.1</li>
+            <li class="footer__item">Координаты навигатора: 123456 654321</li>
+          </ul>
+          <div class="footer__contact">
+            <a class="footer__phone" href="tel:8(804)3336830"></a>
+            <a class="footer__email" href="#">Задать вопрос</a>
+            <a class="footer__social" href="#">
+              <img class="footer__img" src="images/icons/vk.svg" alt="">
+            </a>
           </div>
 
         </div>
 
       </div>
-    </footer>
+
+    </div>
+  </footer>
+
     <script src="js/main.min.js"></script>
   </div>
 </body>
