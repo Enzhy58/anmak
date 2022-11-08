@@ -32,3 +32,7 @@ document.getElementById('about').onclick = function () {
 document.getElementById('gallery').onclick = function () {
     window.location.href = 'gallery.html';
 };
+
+document.getElementById('copy').onclick = function () {
+    window.location.href = 'copy.html';
+};
