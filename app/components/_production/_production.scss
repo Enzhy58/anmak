@@ -54,11 +54,8 @@
     }
 
     &__link {
-        background-color: $accent;
-        color: $white;
         padding: 18px 18px 18px 70px;
         position: relative;
-        transition: all 0.3s;
 
         &::before {
             content: '';
@@ -74,17 +71,6 @@
             background-size: contain;
             z-index: 2;
         }
-
-        &:hover {
-            background-color: $hover;
-        }
-    }
-
-    &__title {
-        font-size: 32px;
-        font-weight: 400;
-        color: $accent;
-        margin-bottom: 30px;
     }
 
     &__content {
@@ -183,10 +169,6 @@
             flex-direction: column;
         }
 
-        &__title {
-            text-align: center;
-        }
-
         &__content {
             margin-right: 0;
             margin-bottom: 50px;
@@ -246,11 +228,6 @@
     .production {
         &__link::after {
             height: 52px;
-        }
-
-        &__title {
-            font-size: 20px;
-            margin-bottom: 15px;
         }
 
         &__video {

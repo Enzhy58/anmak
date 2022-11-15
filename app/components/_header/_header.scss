@@ -107,6 +107,8 @@
     top: 90px;
     left: 50%;
     transform: translateX(-50%);
+    max-width: 360px;
+    width: 100%;
     z-index: 10;
     display: none;
 
@@ -223,11 +225,11 @@
             flex-direction: column;
             text-align: center;
             background-color: $dark;
-            opacity: 0;
+            display: none;
             z-index: 10;
 
             &.menu__bottom-list--active {
-                opacity: 1;
+                display: block;
             }
         }
 

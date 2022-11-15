@@ -16,8 +16,8 @@ body {
 
 
 .wrapper--active {
-  overflow: hidden;
   position: relative;
+
   &::before {
     content: '';
     position: absolute;
@@ -57,6 +57,30 @@ body {
   text-align: left;
 }
 
+.subtitle {
+  font-size: 32px;
+  font-weight: 400;
+  color: $accent;
+  margin-bottom: 30px;
+}
+
+.btn {
+    background-color: $accent;
+    color: $white;
+    padding: 18px;
+    position: relative;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: $hover;
+    }
+}
+
+@media (max-width: 992px) {
+  .subtitle {
+    text-align: center;
+  }
+}
 @media (max-width: 576px) {
   body {
     font-size: 14px;
@@ -67,6 +91,11 @@ body {
   }
 
   .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .subtitle {
     font-size: 20px;
     margin-bottom: 15px;
   }

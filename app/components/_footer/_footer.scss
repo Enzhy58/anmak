@@ -26,10 +26,8 @@
     }
 
     &__phone {
-        background-color: $accent;
         padding: 18px 26px;
         position: relative;
-        transition: all 0.3s;
 
         &::before {
             content: '';
@@ -45,21 +43,12 @@
             background-size: contain;
         }
 
-        &:hover {
-            background-color: $hover;
-        }
     }
 
     &__email {
-        background-color: $accent;
         padding: 15px;
         margin-right: 40px;
         border-left: 1px solid $dark;
-        transition: all 0.3s;
-
-        &:hover {
-            background-color: $hover;
-        }
     }
 
     &__social {
