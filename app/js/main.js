@@ -2,7 +2,7 @@ $(function() {
     $('.menu__btn').on('click', function(){
         $('.menu__bottom-list').toggleClass('menu__bottom-list--active');
     });
-    $('.menu__contect-email, .production__link, .services-benefits__btn, .footer__email').on('click', function(){
+    $('.menu__contect-email, .production__link, .services-benefits__link, .footer__email').on('click', function(){
         $('.form').addClass('form--active');
         $('.wrapper').addClass('wrapper--active');
     });

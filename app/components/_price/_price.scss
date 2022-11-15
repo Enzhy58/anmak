@@ -1,0 +1,35 @@
+.price {
+    &__wrapper {
+        margin-bottom: 50px;
+    }
+
+    &__table {
+        border-collapse: collapse;
+        text-align: center;
+
+        th {
+            padding: 5px;
+            background-color: $accent;
+            color: $white;
+        }
+
+        td {
+            padding: 5px;
+        }
+    }
+}
+
+
+@media (max-width: 880px) {
+    .services {
+        .price {
+            &__wrapper {
+                overflow-x: scroll;
+            }
+        }
+
+        .services-benefits__list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
