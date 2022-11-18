@@ -1,0 +1,14 @@
+.interesting {
+    &__title {
+        font-size: 20px;
+        color: $accent;
+    }
+    &__text {
+        margin-bottom: 20px;
+    }
+    &__text p{
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}

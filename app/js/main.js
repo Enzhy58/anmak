@@ -40,3 +40,7 @@ document.getElementById('copy').onclick = function () {
 document.getElementById('plasma').onclick = function () {
     window.location.href = 'plasma.html';
 };
+
+document.getElementById('laser').onclick = function () {
+    window.location.href = 'laser.html';
+};
